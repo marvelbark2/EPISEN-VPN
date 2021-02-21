@@ -25,5 +25,10 @@
  - All openvpn config should be on /public/utils/resources/
  - Auth file where cred are saved is: credentials
  - Of course : Nodejs
+
+## TODO: 
+ - Cleaning project from cpp files
+ - Cleaning from React Depo
+ - Windows version
  
 
