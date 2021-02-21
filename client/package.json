@@ -1,0 +1,79 @@
+{
+  "name": "episen-vpn",
+  "description": "OpenVpn client for UPEC",
+  "version": "0.1.0",
+  "private": true,
+  "author": {
+    "email": "youness.masaoudi@etu.u-pec.fr",
+    "name": "Youness Masaoudi"
+  },
+  "main": "public/electron.js",
+  "build": {
+    "appId": "fr.upec.episen.fise.episenvpn",
+    "directories": {
+      "buildResources": "utils"
+    },
+    "files": {
+      "filter" : ["node_modules"]
+    },
+    "asar": false,
+
+    "mac": {
+      "target": "dmg",
+      "icon": "build/static/media/EPISEN_Logo.png"
+    }
+  },
+  "dependencies": {
+    "@craco/craco": "^6.0.0",
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "electron-store": "^7.0.0",
+    "electron-updater": "^4.3.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "shelljs": "^0.8.4",
+    "web-vitals": "^0.2.4"
+  },
+  "devDependencies": {
+    "electron": "^11.2.1",
+    "electron-builder": "^22.9.1"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "webpack-dev-server --hot --host 0.0.0.0 --port 4001 --config=./webpack.dev.config.js",
+    "electron": "electron .",
+    "dist": "electron-builder",
+    "deploy": "electron-builder build --mac --publish always"
+
+  },
+
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/marvelbark2/EPISEN-VPN.git"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

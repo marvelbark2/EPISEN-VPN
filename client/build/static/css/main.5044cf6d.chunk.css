@@ -1,0 +1,2 @@
+.container{background-color:#fe0041}.spinner{border:8px solid #7d5195;border-left-color:transparent;width:100px;height:100px;border-radius:50%;-webkit-animation:spin 1.5s infinite;animation:spin 1.5s infinite;text-align:center;margin:.5rem 0 0 150px}.spinner:after,.spinner:before{content:"";width:8px;height:8px;border-radius:50%;background:#7d5195;position:absolute}.spinner:before{top:8px}.spinner:after{bottom:8px}@-webkit-keyframes spin{to{transform:rotate(1turn)}}@keyframes spin{to{transform:rotate(1turn)}}
+/*# sourceMappingURL=main.5044cf6d.chunk.css.map */
